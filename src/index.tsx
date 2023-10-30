@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -11,14 +11,11 @@ if (module?.hot) {
   module.hot.accept();
 }
 
-const root = createRoot(document.getElementById('root') as HTMLElement);
-
-const element = (
+ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>
+  </Provider>,
+  document.getElementById('root')
 );
-
-root.render(element);
