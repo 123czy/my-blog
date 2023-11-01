@@ -1,0 +1,9 @@
+@import '../../style/base.scss';
+
+.content{
+    height: 60px;
+    line-height: 60px;
+    background-color:$themeColor;
+    position: relative;
+    top: 0;
+}
