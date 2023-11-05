@@ -1,9 +1,37 @@
-@import '../../style/base.scss';
+@import "../../style/base.scss";
+@import "../../style/style.scss";
 
-.content{
+.content {
     height: 60px;
     line-height: 60px;
-    background-color:$themeColor;
+    background-color: $themeColor;
+    // color: $textColor;
     position: relative;
     top: 0;
+   font-size: 26px;
+   font-weight: 700;
+   cursor: pointer;
+    .center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .homeBtn {
+        width: 60px;
+        font-size: 26px;
+    }
+    .setting{
+        width: 100px;
+        font-size: 26px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navActive{
+    //    background-color:$hoverColor;
+    }
+    .navBtn{
+        @extend .hover;
+    }
 }

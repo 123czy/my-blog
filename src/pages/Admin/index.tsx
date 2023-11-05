@@ -3,6 +3,7 @@ import { useTitle } from 'ahooks';
 import React from 'react';
 import TopBar from '../../components/topBar'
 import s from './index.scss'
+import {tabBarList} from '../../utils/config'
 import { Link, Route, Routes } from 'react-router-dom';
 
 const Admin: React.FC = () => {
