@@ -16,29 +16,24 @@ const TopBar: React.FC = () => {
                     <div className={s.homeBtn}>
                         <HomeOutlined />
                     </div>
-                      
-                      
-                      <div className={s.document}>
-                            {/* {
+
+                    <div className={s.document}>
+                        {/* {
                                 secondNavArr.map((item, index) => (
                                     <NavLink key={index} to={item.to}>{item.name}</NavLink>
                                 ))
                             } */}
-                            文章
-                        </div>
-                            {
-                                navArr.map((item, index) => (
-                                    <NavLink key={index} className={({ isActive }) => (isActive ? s.navActive : s.navBtn)} to={item.to}>{item.name}</NavLink>
-                                ))
-                            }
-                     
-                        
-                        
-                    
+                        文章
+                    </div>
+                    {
+                        navArr.map((item, index) => (
+                            <NavLink key={index} className={({ isActive }) => (isActive ? s.navActive : s.navBtn)} to={item.to}>{item.name}</NavLink>
+                        ))
+                    }
 
                     <div className={s.setting}>
                         <BgColorsOutlined />
-                        <SettingOutlined  style={{ marginLeft: '24px' }}/>
+                        <SettingOutlined style={{ marginLeft: '24px' }} />
                     </div>
                 </div>
             </div>
