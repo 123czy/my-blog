@@ -16,13 +16,14 @@ const TopBar: React.FC = () => {
                     <div className={s.homeBtn}>
                         <HomeOutlined />
                     </div>
-
+                    
                     <div className={s.document}>
-                        {/* {
+                        <div className={s.secondaryBtn}></div>
+                        {
                                 secondNavArr.map((item, index) => (
-                                    <NavLink key={index} to={item.to}>{item.name}</NavLink>
+                                    <NavLink className={({ isActive }) => (isActive ? s.sedActive : s.articelsSecondItem)} key={index} to={item.to}>{item.name}</NavLink>
                                 ))
-                            } */}
+                            }
                         文章
                     </div>
                     {

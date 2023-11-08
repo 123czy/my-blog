@@ -37,4 +37,33 @@
         border-radius: 10px;
         @extend .hover;
     }
+    .document{
+        position: relative;
+        @extend .hover;
+        .secondaryBtn{
+            position: absolute;
+            top: -200px;
+            width: 90px;
+            background-color: $themeColor1;
+            border-radius: 14px;
+            padding: 10px;
+            z-index: 0;
+            .articelsSecondItem {
+                @extend .hover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                height: 34px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                user-select: none;
+                background-color: $themeColor2;
+                color: $textColor;
+              }
+              .sedActive{
+                background-color: pink;
+              }
+        }
+    }
 }

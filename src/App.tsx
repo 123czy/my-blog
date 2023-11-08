@@ -5,11 +5,15 @@ import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import classNames from 'classnames';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { connect } from 'react-redux';
+import Main from '@/pages/Main'
 import s from './App.scss';
 
 const Admin = lazy(
   () => import(/* webpackChunkName:'Admin', webpackPrefetch:true */ '@/pages/Admin')
 );
+
+
+
 
 interface Props {
   mode?: number;
@@ -23,6 +27,7 @@ const App: React.FC = () => {
       <ErrorBoundary>
         <Suspense fallback={<>loading...</>}>
           <Admin />
+          <Main />
         </Suspense>
       </ErrorBoundary>
     </div>
