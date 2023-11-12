@@ -6,8 +6,9 @@ import classNames from 'classnames';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { connect } from 'react-redux';
 import Main from '@/pages/Main'
+import Footer from '@/pages/Footer';
 import s from './App.scss';
-
+import BackToTop from '@/components/BackToTop';
 const Admin = lazy(
   () => import(/* webpackChunkName:'Admin', webpackPrefetch:true */ '@/pages/Admin')
 );
@@ -23,11 +24,13 @@ interface Props {
 const App: React.FC = () => {
   const bgClasses = [s.bg0,s.bg1,s.bg2]
   return (
-    <div className={classNames(s.AppBox)}>
+    <div className={classNames(s.AppBox,bgClasses[0])}>
       <ErrorBoundary>
         <Suspense fallback={<>loading...</>}>
           <Admin />
           <Main />
+          <Footer />
+          <BackToTop />
         </Suspense>
       </ErrorBoundary>
     </div>

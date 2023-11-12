@@ -1,5 +1,4 @@
 .first {
-    background-image: url("https://img.lzxjack.top:99/202203241627101.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,3 +21,25 @@
     }
     
 }
+
+@media screen and (max-width: 1240px) {
+    .first{
+        .content {
+            width: auto;
+            padding: 0 10rem;
+            height: 50vh;
+            margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .text{
+                  font-size: 30px;
+                  text-align: center;
+                  color: #fff;
+                  font-weight: bold;
+              }
+          }
+    }
+    
+  }
+  

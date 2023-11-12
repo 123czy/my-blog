@@ -1,0 +1,35 @@
+@import '@/style/base.scss';
+@import '@/style/style.scss';
+
+.footer{
+    background-color:$footerBg;
+    height: $footerHeight;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $textColor;
+  font-size: 16px;
+  margin-top: 2 * $space;
+  font-weight: 700;
+  .text{
+    color: $textColor;
+    cursor: pointer;
+  }
+  .text:hover {
+    color: $hoverColor;
+  }
+  .siteFrame{
+    background-color: $themeColor;
+    padding: 2px 8px;
+    margin-right: 10px;
+    border-radius: 6px;
+    user-select: none;
+    @extend .trans;
+    &:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color:$hoverColor;
+    }
+  }
+}

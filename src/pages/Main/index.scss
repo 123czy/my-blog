@@ -1,4 +1,17 @@
+@import '@/style/base.scss';
 .main{
     height: 500px;
-    background-color: pink;
+    width: calc(100% - #{$asideWidth});
+    display: flex;
+    justify-content: center;
+    .leftBlock{
+        margin-right: 20px;
+    }
 }
+
+@media screen  and (max-width: 1240px) {
+    .main{ 
+        width: auto;
+        padding: 0 10rem;
+    }
+  }
