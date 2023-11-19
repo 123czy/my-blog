@@ -141,13 +141,14 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         use: [
           ...getCssLoaders(true),
           {
             loader: 'less-loader',
             options: {
-              sourceMap: isDevelopment
+              sourceMap: isDevelopment,
+              javascriptEnabled: true, // 启用内联JavaScript
             }
           }
         ]

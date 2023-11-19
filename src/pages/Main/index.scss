@@ -5,7 +5,12 @@
     display: flex;
     justify-content: center;
     .leftBlock{
+        width: 500px;
         margin-right: 20px;
+        .item{
+            height: 100px;
+            background-color: pink;
+        }
     }
 }
 

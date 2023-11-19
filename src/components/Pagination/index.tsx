@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './index.scss'
 import { Pagination } from 'antd';
-
+import { Space } from 'antd';
 interface Props  {
     current:number;
     defaultPageSize?:number;
@@ -19,7 +19,7 @@ const Mypagination : React.FC<Props> = (
 ) => {
     return (
         <>
-        <Pagination defaultPageSize={6} total={50} />
+        {/* <Pagination defaultPageSize={6} total={50} /> */}
         </>
     )
 }
