@@ -5,6 +5,8 @@ export const modeBg: string[] = [
   'https://img.lzxjack.top:99/202203241627103.jpg'
 ];
 
+export const cardUrl:string = 'https://img.lzxjack.top:99/202203302348298.webp';
+
 export const source_github = 'https://github.com/lzxjack/react-blog';
 export interface TabBarItem {
     name: string;

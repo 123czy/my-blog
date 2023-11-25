@@ -2,6 +2,7 @@ import React from 'react';
 import s from './index.scss';
 import { useSafeState } from 'ahooks'
 import ListItem from '@/components/ListItem'
+import Aside from '@/components/Aside'
 import Mypagination from '@/components/Pagination'
 const Main: React.FC = () => {
   const list = [
@@ -37,7 +38,7 @@ const Main: React.FC = () => {
           }
         </div>
         <div className={s.rightBlock}>
-          8989898989
+          <Aside />
         </div>
       </div>
     </>

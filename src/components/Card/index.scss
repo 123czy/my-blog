@@ -1,0 +1,14 @@
+@import '@/style/base.scss';
+@import '@/style/style.scss';
+
+.card{
+    padding: 20px;
+    border-radius: $bigRadius;
+    background-color:$themeColor;
+    color: $textColor;
+    font-size: 20px;
+    overflow: hidden;
+    user-select: none;
+    margin-bottom: 30px;
+    @extend .trans;
+}
