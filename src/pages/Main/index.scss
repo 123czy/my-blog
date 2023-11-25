@@ -1,16 +1,18 @@
 @import '@/style/base.scss';
 .main{
-    height: 500px;
-    width: calc(100% - #{$asideWidth});
+    // height: 500px;
+    width: 1200px;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     .leftBlock{
-        width: 500px;
+        width: calc(100% - #{$asideWidth});
         margin-right: 20px;
         .item{
-            height: 100px;
-            background-color: pink;
         }
+    }
+    .rightBlock{
+        width: $asideWidth;
     }
 }
 

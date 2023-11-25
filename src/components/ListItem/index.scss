@@ -1,4 +1,59 @@
+@import '@/style/base.scss';
+@import '@/style/style.scss';
 .item{
-    background-color: pink;
-    height: 200px;
+    background-color: $themeColor;
+    padding: 20px;
+    border-radius: $bigRadius;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .title{
+        font-size: 28px;
+        font-weight: 700;
+        height: 80px;
+        text-align: center;
+        color: $textColor;
+    }
+    .text{
+        color: $textColor;
+        -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 18px;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 2em;
+    text-overflow: ellipsis;
+
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        height:50px;
+        .date{
+           padding: 5px 10px;
+           background-color: $themeColor1;
+           border-radius: $midRadius;
+            color: $textColor;
+            @extend .hover;
+        }
+        .tags{
+            color: $textColor;
+            .tag{
+                padding: 5px 10px;
+                background-color: $themeColor1;
+                margin-right: 10px;
+                border-radius: $midRadius;
+                color: $textColor;
+                @extend .hover;
+            }
+        }
+    }
 }
+
+.item:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    @extend .trans;
+  }

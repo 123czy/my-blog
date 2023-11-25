@@ -4,6 +4,26 @@ import { useSafeState } from 'ahooks'
 import ListItem from '@/components/ListItem'
 import Mypagination from '@/components/Pagination'
 const Main: React.FC = () => {
+  const list = [
+    { 
+      title:'1234',
+      text:'dfadafafdfdsfddsfsdfsdfsdf',
+      date:'2021-12-21',
+      tag:['javascript','html']
+    },
+    { 
+      title:'1235',
+      text:'dfadafafdfdsfddsfsdfsdfsdf',
+      date:'2021-12-21',
+      tag:['webpack']
+    },
+    { 
+      title:'1236',
+      text:'dfadafafdfdsfddsfsdfsdfsdf',
+      date:'2021-12-21',
+      tag:['javascript','html']
+    },
+]
   const [page, setPage] = useSafeState(1);
   const [homeSize, setHomeSize] = useSafeState(10)
   return (
@@ -11,14 +31,10 @@ const Main: React.FC = () => {
       <div className={s.main}>
         <div className={s.leftBlock}>
           {
-            [1, 2].map((item, index) => (
               <div className={s.item} >
-                <ListItem />
+                <ListItem list={list} />
               </div>
-            ))
           }
-
-          {/* <Mypagination current={page}   /> */}
         </div>
         <div className={s.rightBlock}>
           8989898989
