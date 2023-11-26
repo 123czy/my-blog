@@ -1,0 +1,10 @@
+@import '@/style/style.scss';
+@import '@/style/base.scss';
+
+.items{
+    padding: 5px;
+    color: $textColor;
+    @extend .hover;
+    margin:0 6px 6px 0;
+    border-radius:$midRadius;
+}

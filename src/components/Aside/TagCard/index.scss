@@ -1,0 +1,27 @@
+@import '@/style/base.scss';
+@import '@/style/style.scss';
+.card{
+    // height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .block{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius:$midRadius; 
+        @extend .hover;
+        .value{
+            font-weight: 700;
+            text-align: center;
+            color: $hoverColor;
+            &:hover{
+              color: $textColor;
+            }
+        }
+
+    }
+}
