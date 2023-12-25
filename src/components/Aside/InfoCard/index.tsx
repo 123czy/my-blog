@@ -11,11 +11,11 @@ const InfoCard:React.FC = () => {
     const infoList:info[] = [
         {
             name:'总浏览量',
-            value:768
+            value:7680
         },
         {
            name:'运行时间',
-           value:215
+           value:2150
         }
     ]
     return (
